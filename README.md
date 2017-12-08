@@ -19,17 +19,19 @@ https://github.com/szagoruyko/loadcaffe
 Don't forget to try ```require 'loadcaffe'``` in ```th``` first.
 If fail, try ```sudo $(which luarocks) install loadcaffe``` to fix it.
 ## Convert to torch
+copy caffemodel_to_t7.lua to the model folder
 ```bash
-th caffemodel_to_t7.lua path/to/your/model/modelname.prototxt path/to/your/model/modelname.caffemodel path/to/your/target/name
+th caffemodel_to_t7.lua modelname.prototxt modelname.caffemodel name
 ```
 or
 ```bash
-th caffemodel_to_t7.lua path/to/your/model/modelname.prototxt path/to/your/model/modelname.caffemodel path/to/your/target/name ccn2
+th caffemodel_to_t7.lua modelname.prototxt modelname.caffemodel name ccn2
 ```
 The second use ccn2, which will make the next step fail, but it will be better if you just use this project to get torch model.
 
 Your will get name.t7 and name.prototxt.lua
 ## Convet to pytorch 
+copy convert_torch.py to the model folder
 ```bash
 python convert_torch.py -m name.t7
 ```
