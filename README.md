@@ -8,6 +8,7 @@ Which has not been update for 6 month.
 The project above is a combination of:
 - https://github.com/szagoruyko/loadcaffe
 - https://github.com/clcarwin/convert_torch_to_pytorch
+
 I personally encourage you to use the original projects' code to sovle your problem, cause I am not an expert.
 
 ## Install torch
@@ -19,11 +20,11 @@ Don't forget to try ```require 'loadcaffe'``` in ```th``` first.
 If fail, try ```sudo $(which luarocks) install loadcaffe``` to fix it.
 ## Convert to torch
 ```bash
-th caffemodel_to_t7.lua <path/to/your/model/modelname.prototxt> <path/to/your/model/modelname.caffemodel> <path/to/your/target/name>
+th caffemodel_to_t7.lua path/to/your/model/modelname.prototxt path/to/your/model/modelname.caffemodel path/to/your/target/name
 ```
 or
 ```bash
-th caffemodel_to_t7.lua <path/to/your/model/modelname.prototxt> <path/to/your/model/modelname.caffemodel> <path/to/your/target/name> ccn2
+th caffemodel_to_t7.lua path/to/your/model/modelname.prototxt path/to/your/model/modelname.caffemodel path/to/your/target/name ccn2
 ```
 The second use ccn2, which will make the next step fail, but it will be better if you just use this project to get torch model.
 
