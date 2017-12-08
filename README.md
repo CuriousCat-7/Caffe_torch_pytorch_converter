@@ -28,7 +28,7 @@ th caffemodel_to_t7.lua path/to/your/model/modelname.prototxt path/to/your/model
 ```
 The second use ccn2, which will make the next step fail, but it will be better if you just use this project to get torch model.
 
-Your will get name.t7 and name.prototxt.t7
+Your will get name.t7 and name.prototxt.lua
 ## Convet to pytorch 
 ```bash
 python convert_torch.py -m name.t7
